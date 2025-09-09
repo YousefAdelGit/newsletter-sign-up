@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  <link rel="stylesheet" href="/css/IndexStyle.css">
+	<script type="text/javascript" src="script.js" defer></script>
+  <script src="https://unpkg.com/just-validate@4.2.0/dist/just-validate.production.min.js"></script>
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+</head>
+<body>
+
+  <div class="FlexBox">
+    <div class="row textSide roboto-regular bg-blue">
+      <h1 class="roboto-bold ">Stay updated!</h1>
+      <p>  Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul>
+        <li><img src="/assets/images/icon-list.svg" alt="icon-list">  Product discovery and building what matters</li>
+        <li><img src="/assets/images/icon-list.svg" alt="icon-list">  Measuring to ensure updates are a success</li>
+        <li><img src="/assets/images/icon-list.svg" alt="icon-list">  And much more!</li>
+      </ul>
+      <form id="submit-automatically_form_form" autocomplete="off" novalidate>
+  <div class="control-wrapper">
+    <label class="input-label" for="submit-automatically_form_email">
+      Email address
+    </label>
+    <!-- Error message -->
+    <span class="error-message">Valid email required</span>
+
+    <div class="input-wrapper">
+      <input
+        id="submit-automatically_form_email"
+        class="input"
+        autocomplete="off"
+        type="email"
+        placeholder="email@company.com"
+        required
+      />
+    </div>
+  </div>
+
+  <div class="control-wrapper">
+    <button type="submit" class="button">
+      Subscribe to monthly newsletter
+    </button>
+  </div>
+</form>
+    </div>
+    <div class="row imageSide">
+      <img id="responsive-img" src="/assets/images/illustration-sign-up-desktop.svg" alt="illustration-image">
+    </div>
+  </div>
+</body>
+</html>

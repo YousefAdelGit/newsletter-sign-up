@@ -1,0 +1,151 @@
+body{
+  margin: 0;
+  background-color:#36384eff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.roboto-regular{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.roboto-bold{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.bg-dark-blue{
+    background-color:  rgba(36, 39, 66, 1);
+}
+.bg-blue{
+    color: rgba(54, 56, 78, 1);
+}
+.bg-grey{
+    color: rgba(148, 148, 148, 1);
+}
+.bg-white{
+    color:rgba(255, 255, 255, 1) ;
+}
+.FlexBox{
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  font-weight: bold;
+  background-color:rgba(255, 255, 255, 1);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.textSide{
+  flex:1;
+  padding: 35px;
+}
+.textSide h1{
+  margin: 0 0 15px;
+  font-size: 700;
+}
+.textSide p{
+  margin: 8px 0;
+}
+.textSide ul{
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+.textSide ul li{
+  margin-bottom: 10px;
+}
+.imageSide{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+#responsive-img {
+  /* width: 80%; */
+  max-width: 90%;
+  border-radius: 12px;
+}
+.input-wrapper input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* Hide error by default */
+.error-message {
+  display: none;
+  color: #e63946;
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  top: -18px;
+}
+
+/* Show error only when invalid */
+form.submitted .input-wrapper input:invalid {
+  border-color: #e63946;
+  background: #ffeaea;
+  color: #e63946;
+}
+
+/* Show error only when invalid */
+form.submitted .input-wrapper input:invalid ~ .error-message{
+  display: block;
+}
+/* Wrapper for positioning */
+.control-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Submit button */
+.control-wrapper button {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(54, 56, 78, 1) ;
+}
+.control-wrapper button:hover{
+  background:linear-gradient(135deg,#f94f6b,#f97316);
+}
+.just-validate-error-label {
+  color: rgba(255, 98, 87, 1) !important;
+}
+@media (max-width:768px) {
+  body{
+    height: auto;
+  }
+  .FlexBox{
+    flex-direction: column;
+    border-radius: 0;
+  }
+  .imageSide{
+    order: -1;
+    padding: 30px;
+  }  
+}
+/* @media all and (max-width: 843px) {
+  .imageSide { order: 1; } 
+  .textSide  { order: 2; }
+  
+} */
