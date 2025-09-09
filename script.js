@@ -36,12 +36,12 @@ function updateImage() {
   const img = document.getElementById('responsive-img');
       const width = window.innerWidth;
   if (width <= 480) {
-    img.src = '/assets/images/illustration-sign-up-mobile.svg';
+    img.src = './assets/images/illustration-sign-up-mobile.svg';
   }else if(width <= 843){
-    img.src = '/assets/images/illustration-sign-up-tablet.svg';
+    img.src = './assets/images/illustration-sign-up-tablet.svg';
   }
   else {
-    img.src = '/assets/images/illustration-sign-up-desktop.svg';
+    img.src = './assets/images/illustration-sign-up-desktop.svg';
   }
 }
 
